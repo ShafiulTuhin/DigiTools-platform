@@ -1,0 +1,120 @@
+[
+  {
+    "id": 1,
+    "name": "AI Resume Builder",
+    "description": "Create professional resumes quickly using AI tools with templates, formatting help, and export options for different job applications.",
+    "price": 9.99,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["100+ templates", "ATS optimization", "Export to PDF"],
+    "icon": "writing_23274001.png"
+  },
+  {
+    "id": 2,
+    "name": "Portfolio Generator",
+    "description": "Build beautiful and responsive portfolios easily with customizable layouts, modern designs, and tools to showcase your work professionally online.",
+    "price": 19.99,
+    "period": "one-time",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["Custom domains", "Responsive design", "SEO optimized"],
+    "icon": "portfolio.png"
+  },
+  {
+    "id": 3,
+    "name": "Cover Letter AI",
+    "description": "Generate personalized cover letters instantly using AI suggestions tailored to job roles, improving your chances of getting noticed by recruiters.",
+    "price": 4.99,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["AI suggestions", "Multiple formats", "Download as PDF"],
+    "icon": "coverletter.png"
+  },
+  {
+    "id": 4,
+    "name": "Job Tracker Pro",
+    "description": "Manage and track all your job applications in one place with reminders, status updates, and analytics to monitor your progress effectively.",
+    "price": 14.99,
+    "period": "yearly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["Application tracking", "Reminders", "Analytics dashboard"],
+    "icon": "tracker.png"
+  },
+  {
+    "id": 5,
+    "name": "LinkedIn Optimizer",
+    "description": "Enhance your LinkedIn profile visibility with smart keyword suggestions, profile analysis, and tips to attract recruiters and grow your network.",
+    "price": 7.99,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": [
+      "Profile scoring",
+      "Keyword suggestions",
+      "Headline generator"
+    ],
+    "icon": "linkedin.png"
+  },
+  {
+    "id": 6,
+    "name": "Interview Coach AI",
+    "description": "Practice interviews with AI-driven simulations, receive instant feedback, and improve your communication skills to perform confidently in real interviews.",
+    "price": 24.99,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["Mock interviews", "Instant feedback", "Common questions"],
+    "icon": "operation.png"
+  },
+  {
+    "id": 7,
+    "name": "Skill Assessment Tool",
+    "description": "Evaluate your professional skills through tests and detailed reports, helping you identify strengths and areas that need improvement for growth.",
+    "price": 11.99,
+    "period": "yearly",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["Skill tests", "Performance reports", "Improvement tips"],
+    "icon": "design-tool.png"
+  },
+  {
+    "id": 8,
+    "name": "Freelance Proposal Writer",
+    "description": "Write effective freelance proposals using templates and smart suggestions to impress clients and increase your chances of winning projects.",
+    "price": 6.99,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["Proposal templates", "Client insights", "Auto formatting"],
+    "icon": "social-media.png"
+  },
+  {
+    "id": 9,
+    "name": "Career Path Finder",
+    "description": "Discover suitable career paths based on your interests and skills with insights, trends, and guidance for long-term professional success.",
+    "price": 12.99,
+    "period": "one-time",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["Career suggestions", "Market trends", "Growth analysis"],
+    "icon": "operation.png"
+  },
+  {
+    "id": 10,
+    "name": "Certification Planner",
+    "description": "Plan and manage your certification goals with structured roadmaps, reminders, and progress tracking to stay organized and achieve milestones efficiently.",
+    "price": 8.99,
+    "period": "yearly",
+    "tag": "new",
+    "tagType": "new",
+    "features": [
+      "Certification roadmap",
+      "Deadline tracking",
+      "Progress reports"
+    ],
+    "icon": "certifications.png"
+  }
+]
