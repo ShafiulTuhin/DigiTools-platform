@@ -1,10 +1,13 @@
 import "./App.css";
+import Banner from "./components/Banner/Banner";
+import Navbar from "./components/Navbar/Navbar";
 
 function App() {
   return (
-    <>
-      <h2 className="bg-blue-300">Hireact</h2>
-    </>
+    <div className="px-4 md:px-4">
+      <Navbar></Navbar>
+      <Banner></Banner>
+    </div>
   );
 }
 
