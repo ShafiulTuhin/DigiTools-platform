@@ -16,7 +16,7 @@ const Products = ({ productPromise }) => {
           designed <br /> to boost your productivity and creativity.
         </p>
       </div>
-      <div className="mb-[120px] mt-10 max-w-[1200px] mx-auto grid lg:grid-cols-3 md:grid-cols-2 grid-cols gap-3">
+      <div className="mb-[120px] mt-10 max-w-[1200px] mx-auto grid lg:grid-cols-3 md:grid-cols-2 grid-cols gap-5">
         {products.map((product) => (
           <Product key={product.id} product={product}></Product>
         ))}
