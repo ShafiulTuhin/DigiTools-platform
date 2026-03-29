@@ -1,21 +1,23 @@
-import React from "react";
+import UserImg from "../../assets/user.png";
+import PlanImg from "../../assets/package.png";
+import BuildImg from "../../assets/rocket.png";
 
 const GetStartedCard = () => {
   const steps = [
     {
       title: "Create Account",
       desc: "Sign up for free in seconds. No credit card required to get started.",
-      img: "user.png",
+      img: UserImg,
     },
     {
       title: "Choose Plan",
       desc: "Select the best plan that fits your needs with flexible pricing options.",
-      img: "user.png",
+      img: PlanImg,
     },
     {
       title: "Start Building",
       desc: "Use our tools to create and manage your projects easily and efficiently.",
-      img: "rocket.png",
+      img: BuildImg,
     },
   ];
   return (
@@ -32,7 +34,7 @@ const GetStartedCard = () => {
 
           {/* Content */}
           <div className="py-[60px] space-y-4">
-            <img src={`/${item.img}`} alt="" className="mx-auto" />
+            <img src={item.img} alt="" className="mx-auto" />
             <h2 className="text-[#101727] text-2xl font-bold">{item.title}</h2>
             <p className="text-[#627382]">{item.desc}</p>
           </div>

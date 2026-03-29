@@ -2,7 +2,7 @@ import React from "react";
 
 const Stats = () => {
   return (
-    <div className="bg-gradient-to-r from-[#4F39F6] to-[#9514FA] mb-[120px] rounded-lg">
+    <div className="bg-gradient-to-r from-[#4F39F6] to-[#9514FA] mb-[120px] lg:rounded-none rounded-lg">
       <div className=" max-w-[1200px] mx-auto  lg:py-[60px] py-10 grid grid-cols-3">
         <div className="lg:px-20 px-5 border-r-2 border-slate-200">
           <h2 className="font-extrabold lg:text-6xl text-2xl text-white">

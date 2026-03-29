@@ -31,7 +31,7 @@ function App() {
   };
 
   return (
-    <div className="px-4 md:px-4">
+    <div className="px-4 md:px-0">
       <Navbar carts={carts}></Navbar>
       <Banner></Banner>
       <Stats></Stats>
