@@ -1,7 +1,7 @@
 import { ShoppingCart } from "lucide-react";
 import React from "react";
 
-const Navbar = () => {
+const Navbar = ({ carts }) => {
   return (
     <div className="max-w-[1200px] mx-auto flex justify-between items-center py-5">
       <h2 className="font-bold text-2xl bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
@@ -27,7 +27,15 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="flex gap-3 items-center font-bold">
-        <ShoppingCart />
+        <div className="relative inline-block">
+          <ShoppingCart className="w-6 h-6" />
+
+          {carts.length > 0 && (
+            <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs px-1.5 rounded-full">
+              {carts.length}
+            </span>
+          )}
+        </div>
         <p>Login</p>
         <button className="btn bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full">
           GetStarted

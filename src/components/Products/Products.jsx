@@ -1,9 +1,8 @@
 import React, { use, useState } from "react";
 import Product from "../Product/Product";
 
-const Products = ({ productPromise }) => {
+const Products = ({ productPromise, handleCart }) => {
   const products = use(productPromise);
-  console.log(products);
 
   return (
     <div>
@@ -18,7 +17,11 @@ const Products = ({ productPromise }) => {
       </div>
       <div className="mb-[120px] mt-10 max-w-[1200px] mx-auto grid lg:grid-cols-3 md:grid-cols-2 grid-cols gap-5">
         {products.map((product) => (
-          <Product key={product.id} product={product}></Product>
+          <Product
+            key={product.id}
+            product={product}
+            handleCart={handleCart}
+          ></Product>
         ))}
       </div>
     </div>

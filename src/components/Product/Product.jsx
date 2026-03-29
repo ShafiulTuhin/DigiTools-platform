@@ -1,12 +1,13 @@
 import { Check } from "lucide-react";
 import React, { useState } from "react";
 
-const Product = ({ product }) => {
+const Product = ({ product, handleCart }) => {
   const { tag, icon, name, description, price, features } = product;
   const [isAddedToCart, setIsAddedToCart] = useState(false);
 
   const handleAddToCart = () => {
     setIsAddedToCart(true);
+    handleCart(product);
   };
 
   return (

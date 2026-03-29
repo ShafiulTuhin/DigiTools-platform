@@ -1,6 +1,6 @@
 import React from "react";
 
-const Tabs = ({ tab, setTab }) => {
+const Tabs = ({ tab, setTab, carts }) => {
   return (
     <div
       role="tablist"
@@ -17,7 +17,7 @@ const Tabs = ({ tab, setTab }) => {
         onClick={() => setTab("Cart")}
         className={`btn rounded-full px-4 ${tab === "Cart" ? "bg-gradient-to-r from-blue-600 to-purple-600 text-white" : ""}`}
       >
-        Cart(0)
+        Cart({carts.length})
       </button>
     </div>
   );
