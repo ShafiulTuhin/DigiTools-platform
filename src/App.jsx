@@ -9,6 +9,7 @@ import Cart from "./components/Cart/Cart";
 import { ToastContainer, toast } from "react-toastify";
 import GetStarted from "./components/GetStarted/GetStarted";
 import Workflow from "./components/WorkFlow/Workflow";
+import Pricing from "./components/Pricing/Pricing";
 
 const fetchProducts = async () => {
   const url = "/products.json";
@@ -19,7 +20,6 @@ const productPromise = fetchProducts();
 function App() {
   const [tab, setTab] = useState("products");
   const [carts, setCart] = useState([]);
-  console.log(carts);
 
   const handleCart = (product) => {
     const exists = carts.find((cart) => cart.name === product.name);
@@ -46,6 +46,7 @@ function App() {
         <Cart carts={carts} setCart={setCart}></Cart>
       )}
       <GetStarted></GetStarted>
+      <Pricing></Pricing>
       <Workflow></Workflow>
       <ToastContainer />
     </div>
