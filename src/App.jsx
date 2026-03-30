@@ -10,6 +10,7 @@ import { ToastContainer, toast } from "react-toastify";
 import GetStarted from "./components/GetStarted/GetStarted";
 import Workflow from "./components/WorkFlow/Workflow";
 import Pricing from "./components/Pricing/Pricing";
+import Footer from "./components/Footer/Footer";
 
 const fetchProducts = async () => {
   const url = "/products.json";
@@ -48,6 +49,7 @@ function App() {
       <GetStarted></GetStarted>
       <Pricing></Pricing>
       <Workflow></Workflow>
+      <Footer></Footer>
       <ToastContainer />
     </div>
   );
