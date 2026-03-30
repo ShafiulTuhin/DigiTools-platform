@@ -3,7 +3,7 @@ import React from "react";
 
 const Navbar = ({ carts }) => {
   return (
-    <div className="max-w-[1200px] mx-auto flex justify-between items-center py-5">
+    <div className="px-4 max-w-[1200px] mx-auto flex justify-between items-center py-5">
       <h2 className="font-bold text-2xl bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
         DigiTools
       </h2>

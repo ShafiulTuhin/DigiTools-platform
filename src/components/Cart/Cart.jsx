@@ -27,7 +27,7 @@ const Cart = ({ carts, setCart }) => {
       {carts.length === 0 ? (
         <div className="flex flex-col justify-center items-center">
           <ShoppingCart size={80} />
-          <p className="text-center text-2xl text-[#797979] font-bold pt-4 pb-10">
+          <p className="text-center md:text-2xl text-[#797979] font-bold pt-4 pb-10">
             The Cart is empty
           </p>
         </div>

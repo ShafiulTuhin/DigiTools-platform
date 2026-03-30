@@ -4,7 +4,7 @@ import Play from "../../assets/Play.png";
 
 const Banner = () => {
   return (
-    <div className="max-w-[1200px] mx-auto md:flex  justify-between items-center lg:py-[85px] py-[30px] gap-5">
+    <div className="px-4 md:px-0 max-w-[1200px] mx-auto md:flex  justify-between items-center lg:py-[85px] py-[30px] gap-5">
       <div className="space-y-6 lg:w-[640px] w-full md:mb-0 mb-4">
         <div className="flex gap-3 items-center bg-purple-200 px-4 rounded-full py-1">
           <img src={Rectangle} alt="" />

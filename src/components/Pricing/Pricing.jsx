@@ -51,14 +51,14 @@ const Pricing = () => {
   return (
     <div className="py-10">
       <div className="text-center">
-        <h2 className="font-extrabold  text-[40px] mb-4">
+        <h2 className="font-extrabold  md:text-[40px] text-3xl mb-4">
           Simple, Transparent Pricing
         </h2>
         <p className="mb-8 text-[#627382]">
           Choose the plan that fits your needs. Upgrade or downgrade anytime.
         </p>
       </div>
-      <div className="max-w-[1200px] mx-auto grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5">
+      <div className="max-w-[1200px] px-4 md:px-0 mx-auto grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5">
         {plans.map((plan) => {
           return (
             <div className="bg-slate-200 p-10 rounded-lg flex flex-col relative hover:bg-gradient-to-r from-blue-600 to-purple-600 group transition-transform duration-300 hover:scale-105">
