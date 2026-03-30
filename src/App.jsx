@@ -8,6 +8,7 @@ import Tabs from "./components/Tabs/Tabs";
 import Cart from "./components/Cart/Cart";
 import { ToastContainer, toast } from "react-toastify";
 import GetStarted from "./components/GetStarted/GetStarted";
+import Workflow from "./components/WorkFlow/Workflow";
 
 const fetchProducts = async () => {
   const url = "/products.json";
@@ -45,6 +46,7 @@ function App() {
         <Cart carts={carts} setCart={setCart}></Cart>
       )}
       <GetStarted></GetStarted>
+      <Workflow></Workflow>
       <ToastContainer />
     </div>
   );
