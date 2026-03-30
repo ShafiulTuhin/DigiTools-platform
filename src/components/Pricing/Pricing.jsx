@@ -1,5 +1,5 @@
 import { Check } from "lucide-react";
-import React from "react";
+
 const plans = [
   {
     name: "Starter",
@@ -59,44 +59,83 @@ const Pricing = () => {
         </p>
       </div>
       <div className="max-w-[1200px] px-4 md:px-0 mx-auto grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5">
-        {plans.map((plan) => {
+        {plans.map((plan, index) => {
+          const isActive = index === 1;
+
           return (
-            <div className="bg-slate-200 p-10 rounded-lg flex flex-col relative hover:bg-gradient-to-r from-blue-600 to-purple-600 group transition-transform duration-300 hover:scale-105">
+            <div
+              key={index}
+              className={`p-10 rounded-lg flex flex-col relative group transition-transform duration-300
+        ${
+          isActive
+            ? "bg-gradient-to-r from-blue-600 to-purple-600 scale-105"
+            : "bg-slate-200 hover:bg-gradient-to-r from-blue-600 to-purple-600 hover:scale-105"
+        }`}
+            >
               {plan.mostPopular && (
                 <span className="absolute -top-4 left-1/2 -translate-x-1/2 bg-amber-400 text-black text-xs font-semibold px-4 py-1 rounded-full shadow-md">
                   Most Popular
                 </span>
               )}
-              <h2 className="font-bold group-hover:text-white">{plan.name}</h2>
-              <p className="text-[#627382] group-hover:text-white">
+
+              <h2
+                className={`font-bold ${
+                  isActive ? "text-white" : "group-hover:text-white"
+                }`}
+              >
+                {plan.name}
+              </h2>
+
+              <p
+                className={`${
+                  isActive
+                    ? "text-white"
+                    : "text-[#627382] group-hover:text-white"
+                }`}
+              >
                 {plan.strategy}
               </p>
 
-              <p className="font-bold my-5 text-2xl group-hover:text-white">
+              <p
+                className={`font-bold my-5 text-2xl ${
+                  isActive ? "text-white" : "group-hover:text-white"
+                }`}
+              >
                 ${plan.pricePerMonth}
-                <span className="text-[#627382] group-hover:text-white text-[12px]">
+                <span
+                  className={`text-[12px] ${
+                    isActive
+                      ? "text-white"
+                      : "text-[#627382] group-hover:text-white"
+                  }`}
+                >
                   /Mo
                 </span>
               </p>
 
-              {/* Features */}
               <div className="mb-7">
                 {plan.features.map((feature, ind) => (
                   <p
                     key={ind}
-                    className="leading-8 text-[#627382] group-hover:text-white flex gap-2 items-center"
+                    className={`leading-8 flex gap-2 items-center ${
+                      isActive
+                        ? "text-white"
+                        : "text-[#627382] group-hover:text-white"
+                    }`}
                   >
-                    <Check color="#0ced32" />
+                    <Check color={isActive ? "#ffffff" : "#0ced32"} />
                     <span>{feature}</span>
                   </p>
                 ))}
               </div>
 
-              {/* Button pushed to bottom */}
               <button
-                className="mt-auto p-2 w-full rounded-full 
-bg-gradient-to-r from-blue-600 to-purple-600 text-white
-group-hover:bg-none group-hover:bg-white group-hover:text-black transition"
+                className={`mt-auto p-2 w-full rounded-full transition-all duration-300
+                  ${
+                    isActive
+                      ? "bg-white text-black hover:font-bold hover:text-blue-600 cursor-pointer"
+                      : "bg-gradient-to-r from-blue-600 to-purple-600 text-white hover:from-white hover:to-white hover:text-black cursor-pointer"
+                  }`}
               >
                 {plan.buttonText}
               </button>

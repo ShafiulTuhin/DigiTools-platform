@@ -1,5 +1,6 @@
 import { Check } from "lucide-react";
 import React, { useState } from "react";
+import { buttonBg } from "../buttonStyles";
 
 const Product = ({ product, handleCart }) => {
   const { tag, icon, name, description, price, features } = product;
@@ -39,7 +40,7 @@ const Product = ({ product, handleCart }) => {
       </div>
       <button
         onClick={handleAddToCart}
-        className={`btn w-full text-white rounded-full ${isAddedToCart ? "btn-success" : "bg-gradient-to-r from-blue-600 to-purple-600"}`}
+        className={`btn w-full text-white rounded-full ${isAddedToCart ? "btn-success" : buttonBg}`}
       >
         {isAddedToCart ? (
           <>

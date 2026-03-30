@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
+
 import "./App.css";
 import Banner from "./components/Banner/Banner";
 import Navbar from "./components/Navbar/Navbar";
@@ -6,7 +8,6 @@ import Products from "./components/Products/Products";
 import Stats from "./components/Stats/Stats";
 import Tabs from "./components/Tabs/Tabs";
 import Cart from "./components/Cart/Cart";
-import { ToastContainer, toast } from "react-toastify";
 import GetStarted from "./components/GetStarted/GetStarted";
 import Workflow from "./components/WorkFlow/Workflow";
 import Pricing from "./components/Pricing/Pricing";

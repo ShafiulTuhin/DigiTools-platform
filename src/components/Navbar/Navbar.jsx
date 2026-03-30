@@ -1,5 +1,5 @@
 import { ShoppingCart } from "lucide-react";
-import React from "react";
+import { buttonBg } from "../buttonStyles";
 
 const Navbar = ({ carts }) => {
   return (
@@ -37,9 +37,7 @@ const Navbar = ({ carts }) => {
           )}
         </div>
         <p>Login</p>
-        <button className="btn bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full">
-          GetStarted
-        </button>
+        <button className={`${buttonBg}`}>Get Started</button>
       </div>
     </div>
   );

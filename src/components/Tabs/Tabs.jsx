@@ -1,4 +1,5 @@
 import React from "react";
+import { buttonBg } from "../buttonStyles";
 
 const Tabs = ({ tab, setTab, carts }) => {
   return (
@@ -8,14 +9,14 @@ const Tabs = ({ tab, setTab, carts }) => {
     >
       <button
         onClick={() => setTab("products")}
-        className={`btn rounded-full px-4 ${tab === "products" ? " bg-gradient-to-r from-blue-600 to-purple-600 text-white" : ""}`}
+        className={`btn rounded-full px-4 ${tab === "products" ? buttonBg : ""}`}
       >
         Products
       </button>
 
       <button
         onClick={() => setTab("Cart")}
-        className={`btn rounded-full px-4 ${tab === "Cart" ? "bg-gradient-to-r from-blue-600 to-purple-600 text-white" : ""}`}
+        className={`btn rounded-full px-4 ${tab === "Cart" ? buttonBg : ""}`}
       >
         Cart({carts.length})
       </button>

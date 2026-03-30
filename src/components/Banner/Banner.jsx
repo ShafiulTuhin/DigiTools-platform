@@ -1,6 +1,7 @@
 import BannerImage from "../../assets/banner.png";
 import Rectangle from "../../assets/Rectangle.png";
 import Play from "../../assets/Play.png";
+import { buttonBg } from "../buttonStyles";
 
 const Banner = () => {
   return (
@@ -21,10 +22,8 @@ const Banner = () => {
           Products
         </p>
         <div className="space-x-5">
-          <button className="btn bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full ">
-            Explore Products
-          </button>
-          <button className="btn bg-transparent  rounded-full bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent border-2 border-purple-300 ">
+          <button className={`${buttonBg}`}>Explore Products</button>
+          <button className="btn rounded-full bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent border-2 border-purple-300 ">
             <img src={Play} alt="" />
             GetStarted
           </button>
